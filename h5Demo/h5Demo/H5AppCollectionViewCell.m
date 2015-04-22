@@ -17,10 +17,12 @@
 - (void)awakeFromNib {
     // Initialization code
     
-//    [_deleteButton addTarget:self action:@selector(uninstallApp) forControlEvents:UIControlEventTouchUpInside];
-    _appIcon.layer.cornerRadius = 20;
-    _appIcon.layer.masksToBounds = YES;
     
+}
+
+-(void)drawRect:(CGRect)rect {
+    _appIcon.layer.masksToBounds = YES;
+    _appIcon.layer.cornerRadius = rect.size.width/3.;
 }
 
 
@@ -38,7 +40,7 @@
         NSData *iconData = _currentApp.icon_data;
         
         dispatch_async(dispatch_get_main_queue(), ^{
-           
+            
             _appIcon.image = [UIImage imageWithData:iconData];
             
         });

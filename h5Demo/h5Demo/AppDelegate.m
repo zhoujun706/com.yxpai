@@ -116,8 +116,7 @@ NSString *const kKeyKeychainName = @"com.yxpai.h5Demo.keychain";
             [self saveUserIdToKeychain];
             
         }else{
-            //失败
-            NSLog(@"shibai ");
+            
         }
         
         

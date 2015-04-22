@@ -1,0 +1,57 @@
+//
+//  h5Demo.pch
+//  h5Demo
+//
+//  Created by 邹俊 on 15/4/3.
+//  Copyright (c) 2015年 尚娱网络. All rights reserved.
+//
+
+
+
+
+
+#ifndef h5Demo_h5Demo_pch
+#define h5Demo_h5Demo_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+//---------------------------------------导入头文件---------------------------------------------------------------------
+/**
+ *  系统框架
+ */
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+/**
+ *  第三方头文件
+ */
+#import "FMDB.h"
+
+/**
+ *  本地类
+ */
+#import "AppDelegate.h"
+#import "HttpManager.h"
+
+
+
+
+
+
+
+//-----------------------------------------常量、宏--------------------------------------------------------------------------
+
+
+
+
+#define SCREEN_WIDTH [UIScreen mainScreen].bounds.size.width
+#define SCREEN_HEIGHT [UIScreen mainScreen].bounds.size.height
+
+#define AppDelegateInstance ((AppDelegate *)([UIApplication sharedApplication].delegate))
+
+
+//-----------------------------------------接口、API------------------------------------------------------------------------
+
+
+#endif

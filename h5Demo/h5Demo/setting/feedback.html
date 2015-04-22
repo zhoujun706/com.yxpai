@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0" />
+        <title>用户反馈</title>
+        <link href="style.css" rel="stylesheet" type="text/css" />
+        <script>
+            function handleForm()
+            {
+                if(document.getElementById("button").value!="正在发送...")
+                {
+                    if(document.getElementById("content").value=="")
+                    {
+                        alert("内容不能为空!" );
+                        return false;
+                    }else
+                    {
+                        document.getElementById("button").value = "正在发送...";
+                        document.getElementById("feedbackform").submit();
+                        
+                        return true;
+                    }
+                }else
+                {
+                    return false;
+                }
+            }
+        </script>
+    </head>
+    
+    <body>
+        <form id="feedbackform" action="h5://feedback" method="post">
+            <div class="input-row">
+                <span>标题：（可选）</span>
+                <textarea id="title" name="title" rows="1"></textarea>
+            </div>
+            <div class="input-row">
+                <span>内容：</span>
+                <textarea id="content" name="content" rows="4"></textarea>
+            </div>
+                <div class="button"><input id="button" type="button" value="发送反馈" onclick="handleForm()"></div>
+        </form>
+    </body>
+</html>

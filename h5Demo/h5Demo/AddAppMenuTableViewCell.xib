@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6751" systemVersion="14C109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="AddAppMenuTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="JV1-ka-WxV">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="42"/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cHL-NF-Dbc">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="JV1-ka-WxV" secondAttribute="trailing" id="5aa-uV-gLF"/>
+                    <constraint firstItem="JV1-ka-WxV" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="GyX-KI-him"/>
+                    <constraint firstItem="JV1-ka-WxV" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="Olb-TV-6J1"/>
+                    <constraint firstAttribute="bottom" secondItem="cHL-NF-Dbc" secondAttribute="bottom" id="QgP-DA-z2b"/>
+                    <constraint firstItem="cHL-NF-Dbc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="ZZo-2K-fGe"/>
+                    <constraint firstAttribute="trailing" secondItem="cHL-NF-Dbc" secondAttribute="trailing" id="aXN-By-WGq"/>
+                    <constraint firstItem="cHL-NF-Dbc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="cZm-qy-nxk"/>
+                    <constraint firstAttribute="bottom" secondItem="JV1-ka-WxV" secondAttribute="bottom" constant="1" id="l3l-US-IdK"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="backImage" destination="JV1-ka-WxV" id="uko-Wf-ULO"/>
+                <outlet property="menuName" destination="cHL-NF-Dbc" id="G4S-35-nac"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>

@@ -38,7 +38,6 @@ NSString *const kKeyKeychainName = @"com.yxpai.h5Demo.keychain";
 - (void)initData {
     _storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     _apps = [NSMutableArray array];
-    
     [self setDataDB];
 }
 

@@ -18,6 +18,8 @@
     // Initialization code
     
 //    [_deleteButton addTarget:self action:@selector(uninstallApp) forControlEvents:UIControlEventTouchUpInside];
+    _appIcon.layer.cornerRadius = 20;
+    _appIcon.layer.masksToBounds = YES;
     
 }
 

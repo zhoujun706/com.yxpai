@@ -28,7 +28,6 @@ NSString *const kKeyKeychainName = @"com.yxpai.h5Demo.keychain";
     [self checkAndSetUserId];
     [self readDatabase];
     
-    
     return YES;
 }
 

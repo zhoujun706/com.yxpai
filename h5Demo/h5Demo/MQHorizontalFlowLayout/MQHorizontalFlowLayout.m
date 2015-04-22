@@ -65,7 +65,7 @@
         {
             self.minimumInteritemSpacing = 5.0f;
         }
-        self.minimumLineSpacing = 38.0f;
+        self.minimumLineSpacing = 35.0f;
     
 
     
